@@ -5,9 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Show</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Pet Show</h1>
+  <header>
+    <div class="container logo">
+      <i class="fa-solid fa-paw"></i>
+      <h1>Pet Show</h1>
+    </div>
+
+    <nav class="container navbar">
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fa fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+          <li class="scale"><a href="#about">Sobre a loja</a></li>
+          <li class="scale"><a href="#products">Produtos</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links-destop">
+        <li class="scale"><a href="#about">Sobre a loja</a></li>
+        <li class="scale"><a href="#products">Produtos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="about" id="about">
+      <div class="about-img-container">
+        <img src="https://images.pexels.com/photos/757455/pexels-photo-757455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+      </div>
+      
+      <div>
+        <h2>Sobre a loja</h2>
+    
+        <p>
+          Na Pet Show, nosso compromisso é garantir que seu pet receba todo o cuidado e carinho que merece. Somos uma loja especializada em produtos de alta qualidade para animais de estimação, desde rações e snacks até acessórios e brinquedos que promovem bem-estar e diversão.<br><br>
+          Aqui, entendemos que cada pet é único e fazemos questão de oferecer soluções personalizadas para atender as necessidades de cada fase da vida do seu companheiro.
+        </p>
+      </div>
+    </section>
+  
+    <section id="products">
+      <h2>Produtos</h2>
+      
+      <div class="products">
+        <div class="card-product">
+          <img src="https://img.freepik.com/vetores-gratis/sacos-de-mascotes-conjunto-de-alimentos_24877-51181.jpg?t=st=1728868585~exp=1728872185~hmac=eabe985b619aa093bd12155e7f4e9abb0c495688d1d38e3fc709e877212c23d0&w=740" alt="Comedouro alumínio cor branca">
+    
+          <h3>Comedouro em Alumínio - 250ML</h3>
+    
+          <p>Comedouro XPTO em Alumínio - 250ML para animais de porte médio</p>
+    
+          <button class="btn-add-cart">
+            <a href="#">Adicionar ao carrinho</a>
+          </button>
+        </div>
+    
+        <div class="card-product">
+          <img src="https://img.freepik.com/vetores-gratis/sacos-de-mascotes-conjunto-de-alimentos_24877-51181.jpg?t=st=1728868585~exp=1728872185~hmac=eabe985b619aa093bd12155e7f4e9abb0c495688d1d38e3fc709e877212c23d0&w=740" alt="Frasco de loção envolto em pétalas de flor">
+    
+          <h3>Loção limpeza de orelhas - 80ML</h3>
+    
+          <p>Loção para limpeza de orelhas - 80ML para cães e gatos</p>
+    
+          <button class="btn-add-cart">
+            <a href="#">Adicionar ao carrinho</a>
+          </button>
+        </div>
+    
+        <div class="card-product">
+          <img src="https://img.freepik.com/vetores-gratis/sacos-de-mascotes-conjunto-de-alimentos_24877-51181.jpg?t=st=1728868585~exp=1728872185~hmac=eabe985b619aa093bd12155e7f4e9abb0c495688d1d38e3fc709e877212c23d0&w=740" alt="Escova de dente">
+    
+          <h3>Escova de dente para cães de gatos</h3>
+    
+          <p>Escova de dente para cães de gatos - Tamanho único</p>
+    
+          <button class="btn-add-cart">
+            <a href="#">Adicionar ao carrinho</a>
+          </button>
+        </div>
+    
+        <div class="card-product">
+          <img src="https://img.freepik.com/vetores-gratis/sacos-de-mascotes-conjunto-de-alimentos_24877-51181.jpg?t=st=1728868585~exp=1728872185~hmac=eabe985b619aa093bd12155e7f4e9abb0c495688d1d38e3fc709e877212c23d0&w=740" alt="Ossos de brinquedo">
+    
+          <h3>Brinquedo Osso de borracha</h3>
+    
+          <p>Brinquedo Osso de borracha - Cores variadas</p>
+    
+          <button class="btn-add-cart">
+            <a href="#">Adicionar ao carrinho</a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy 2024 Pet Show. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
