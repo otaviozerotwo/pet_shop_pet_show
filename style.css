@@ -37,7 +37,7 @@ footer {
   align-items: center;
   padding: 1rem;
   height: 88px;
-  background-color: #9442B9;
+  background-color: #22223B;
   color: #FFF;
   width: 100%;
 }
@@ -69,10 +69,11 @@ footer {
   right: 0;
   width: 60%;
   height: 100%;
-  background-color: rgba(148, 66, 185, 0.9);
+  background-color: rgba(34, 34, 59, 0.9);
   flex-direction: column;
   align-items: center;
   font-size: 18px;
+  z-index: 1;
 }
 
 .nav-links-mobile {
@@ -108,12 +109,12 @@ footer {
   margin-top: 20px;
   margin-right: 20px;
   align-self: end;
-  background-color: rgba(148, 66, 185, 0.1);
+  background-color: rgba(34, 34, 59, 0.1);
   width: 24px;
 }
 
 .hamburger {
-  background-color: rgba(148, 66, 185, 0.9);
+  background-color: rgba(34, 34, 59, 0.9);
 }
 
 .hamburger,
@@ -154,9 +155,9 @@ footer {
 }
 
 h2 {
-  color: #9442B9;
+  color: #22223B;
   padding-bottom: 12px;
-  border-bottom: 3px solid #9442B9;
+  border-bottom: 3px solid #22223B;
   margin: 24px 0;
   font-weight: bold;
 }
@@ -167,15 +168,12 @@ h3 {
 }
 
 .btn-add-cart {
-  background-color: #9442B9;
+  background-color: #8380B6;
   border: none;
   border-radius: 4px;
   padding: 10px;
   width: 100%;
-}
-
-.btn-add-cart a {
-  text-decoration: none;
+  cursor: pointer;
   color: #FFF;
   font-size: 16px;
   font-weight: bold;
@@ -218,7 +216,19 @@ footer {
     display: flex;
     font-size: 18px;
   }
+
+  h1 {
+    font-size: 32px;
+  }
   
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
   .about {
     display: grid;
     grid-template-columns: 40% 56%;
